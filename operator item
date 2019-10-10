@@ -1,0 +1,26 @@
+using System;
+public class Item
+{
+    public int i;
+    public Item(int j)
+    {
+        i=j;
+    }
+    public static Item operator +(Item x,Item y)
+    {
+        System.Console.WriteLine("operator+"+x.i+""+y.i);
+        Item z=new Item(x.i + y.i);
+        return z;
+    }
+}
+public class Test
+{
+    public static void Main()
+    {
+        Item a=new Item(10);
+        Item b=new Item(5);
+        Item c;
+        c=a+b;
+        System.Console.WriteLine(c.i);
+    }
+}
