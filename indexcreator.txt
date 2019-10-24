@@ -1,0 +1,29 @@
+using System;
+public class Indexcreator
+{
+	private string[] val=new String[3];
+	public string this[int index]
+	{
+		get
+		{
+			return this[index];
+		}
+		set
+		{
+			val[index]=value;
+		}
+	}
+}
+public class main
+{
+	public static void Main(String[] args)
+	{
+		Indexcreator ic=new Indexcreator();
+			ic[0]="c";
+		ic[1]="c++";
+		ic[2]="csharp";
+		Console.WriteLine(ic[0]);
+		Console.WriteLine(ic[1]);
+		Console.WriteLine(ic[2]);
+	}
+}
