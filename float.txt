@@ -1,0 +1,28 @@
+using System;
+public class sam1<T>
+{
+private T data;
+public T value
+{
+get
+{
+return this.data;
+}
+set
+{
+this.data=value;
+}
+}
+}
+public class Test
+{
+	public static void Main(String[] args)
+	{
+		sam1<String>name=new sam1<string>();
+		name.value="BNMIT";
+		sam1<float>version=new sam1<float>();
+		version.value=5.604F;
+		Console.WriteLine(name.value);
+		Console.WriteLine(version.value);
+	}
+}
