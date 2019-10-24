@@ -1,0 +1,39 @@
+using System;
+namespace sample
+{
+public class sample1
+{
+private string[]word=new string[2];
+public string this[int flag]
+{
+get
+{
+String temp=word[flag];
+return temp;
+}
+set
+{
+word[flag]=value;
+}
+}
+public String this[float flag]
+{
+get
+{
+String temp=word[1];
+return temp;
+}
+set
+{
+word[1]=value;
+}
+}
+public static void Main(String[] args)
+{
+sample1 obj=new sample1();
+obj[0]="Hello ";
+obj[1.0F]="BNMIT";
+Console.WriteLine(obj[0] + obj[1]);
+}
+}
+}
